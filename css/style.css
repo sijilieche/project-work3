@@ -1,0 +1,91 @@
+/* 整体 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 切换项标题里的a链接 */
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #666;
+}
+
+/* 高度和宽度固定，内容在页面居中显示 */
+.main {
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -600px;
+    margin-top: -250px;
+}
+
+/* 选项卡 */
+.main .title {
+    width: 1200px;
+    height: 40px;
+     /* 文字大小是22px */
+    font-size: 22px;
+     /* 网页字体： Microsoft YaHei */
+    font-family: 'Microsoft YaHei';
+    background: #fff;
+     /* 鼠标放在页面上时，变小手状 */
+    cursor: pointer;
+}
+
+/* 选项卡文字在垂直和水平方向均是居中显示 */
+.main .title div {
+    float: left;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* 并不存在的类名，用于js中更换选项卡的边框圆角以及字体粗细,
+    当鼠标点击选项卡时，选项卡的四个角显示为圆角，字体粗细也发生变化
+*/
+.home {
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+
+    /* 轮播图盒子的宽度大小与选项卡盒子的宽度大小一致 */
+.main .content {
+    
+    width: 1200px;
+    height: 460px;
+    overflow: hidden;
+}
+
+.main .content .banner {
+    width: 1200px;
+    height: 460px;
+    background-repeat: no-repeat;
+     /* 图片撑满轮播图的盒子 */
+    background-size: cover;
+    float: left;
+}
+
+.main .content .banner1 {
+    background: url("../img/1.jpg");
+}
+
+.main .content .banner2 {
+    background: url("../img/2.jpg");
+}
+
+.main .content .banner3 {
+    background: url("../img/3.jpg");
+}
+
+.main .content .banner4 {
+    background: url("../img/4.jpg");
+}
